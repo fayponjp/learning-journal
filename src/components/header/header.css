@@ -1,0 +1,27 @@
+header {
+    padding: 1em;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    color: var(--header-title-text);
+    font-size: 1.3rem;
+    align-items: center;
+}
+
+nav > img {
+    margin-right: 0.5em;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    gap: 0.5em;
+    margin-left: auto;
+}
+
+nav > ul > li > a {
+    color: var(--header-link-text);
+    text-decoration: none;
+}
