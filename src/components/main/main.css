@@ -1,3 +1,20 @@
-main {
-    padding: 1em;
+.main-header {
+    background: radial-gradient(circle, rgba(242, 243, 240, 0.2) 10%, rgba(0,0,0,0.6) 90%), url("./backgrounds/cover_1.JPG") 60% 90%;
+    padding-top: 30vh;
+    background-size: cover;
+    color: #fff;
+    padding-bottom: 2em;
+}
+
+.container {
+    padding: 1.5em 3em;
+}
+
+.blog-container {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
 }

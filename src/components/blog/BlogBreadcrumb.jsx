@@ -1,7 +1,9 @@
+import "./breadcrumb.css"
+
 export default function BlogBreadcrumb() {
     return (
         <article>
-            <img src="./backgrounds/cover_2" alt="" />
+            <img src="./backgrounds/cover_2.JPG" alt="" />
             <h3><time datetime="July 23, 2022">July 23, 2022</time></h3>
             <h2>Blog one</h2>
             <p>

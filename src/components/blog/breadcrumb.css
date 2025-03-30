@@ -1,0 +1,22 @@
+article {
+    max-width: calc((100%/3) - 2em);
+}
+
+article img {
+    max-height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+@media (max-width: 1280px) {
+    article {
+        max-width: calc((100%/2) - 1em);
+    }
+}
+
+@media (max-width: 900px) {
+    article {
+        max-width: 100%;
+    }
+}

@@ -2,7 +2,7 @@ import './header.css'
 
 export default function Header() {
     return (
-        <header>
+        <header className='nav-header container'>
             <nav>
                 <img src="logo.svg" alt="logo depicting a chat bubble" />
                 <span>My learning journal</span>
