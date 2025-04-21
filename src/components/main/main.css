@@ -4,6 +4,7 @@
     background-size: cover;
     color: #fff;
     padding-bottom: 2em;
+    height: 70vh;
 }
 
 .container {
@@ -14,13 +15,18 @@
     .container {
         padding: 1.5em 2em;
     }
-}
+} 
 
 .blog-container {
     margin-top: 2em;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 1em;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+}
+
+.blog-container > article {
+    flex: 1 0 400px;
 }

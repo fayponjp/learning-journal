@@ -5,7 +5,7 @@ export default function Header() {
         <header className='nav-header container'>
             <nav>
                 <img src="logo.svg" alt="logo depicting a chat bubble" />
-                <span>My learning journal</span>
+                <span>My Learning Journal</span>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About Me</a></li>
