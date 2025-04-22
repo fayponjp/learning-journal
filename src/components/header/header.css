@@ -1,26 +1,39 @@
 .nav-header {
     background-color: white;
-}
-
-nav {
     display: flex;
     color: var(--header-title-text);
     font-size: 1.3rem;
     align-items: center;
 }
 
-nav > img {
-    margin-right: 0.5em;
+@media (max-width: 550px) {
+    .nav-header {
+        flex-direction: column;
+    }
+
+    .nav-header span {
+        padding-bottom: 1em;
+    }
+
+    nav {
+        margin-right: auto;
+        padding-top: 1em;
+        border-top: 1px solid gray;
+    }
 }
 
-nav > ul {
-    list-style: none;
+nav {
     display: flex;
-    gap: 0.5em;
+    justify-content: end;
+    gap: 1em;
     margin-left: auto;
 }
 
-nav > ul > li > a {
+.nav-header  > img {
+    margin-right: 0.5em;
+}
+
+nav a {
     color: var(--header-link-text);
     text-decoration: none;
 }

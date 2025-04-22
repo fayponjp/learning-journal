@@ -1,0 +1,45 @@
+.about-header {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+@media (max-width: 550px) {
+    .about-header {
+        flex-direction: column;
+    }
+
+    .about-header > div > h2 {
+        font-size: 1.5rem;
+
+    }
+
+    div.about-container {
+        padding-inline: 2rem;
+
+    }
+}
+
+.about-header h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+.about-header img {
+    border-radius: 50%;
+    width: 115px;
+    object-fit: cover;
+}
+
+.recent-post-header {
+    margin-bottom: -1em;
+    text-align: center;
+}
+
+.about-container {
+    padding-inline: 10rem;
+}
+
+.about-container p {
+    margin-block: 1em;
+}

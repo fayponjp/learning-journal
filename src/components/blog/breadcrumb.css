@@ -2,8 +2,18 @@ article.breadcrumb {
     max-width: calc((100%/3) - 2em);
 }
 
-article.breadcrumb > h2 {
+article.breadcrumb a {
+    text-decoration: none;
+    color: var(--main-blog-body-text);
+}
+
+article.breadcrumb h2 {
     font-size: 1.1rem;
+    color: var(--breadcrumb-header-text);
+}
+
+article.breadcrumb time {
+    color: var(--breadcrumb-header-text);
 }
 
 article.breadcrumb img {

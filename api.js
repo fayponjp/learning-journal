@@ -1,6 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection } from 'firebase/firestore/app';
-
+import { getFirestore, collection, getDocs, getDoc, doc, orderBy, query, limit } from 'firebase/firestore/lite';
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "programming-journal.firebaseapp.com",
@@ -15,11 +14,20 @@ const db = getFirestore(app)
 
 const journalEntriesCollectionRef = collection(db, "journal-entries")
 
-export async function getJournalEntries() {
-    const docsSnapShot = await getDocs(journalEntriesCollectionRef)
-    const entries = docsSnapShot.docs.map(doc => ({
-        ...doc.data(),
-        id: doc.id
-    }))
-    return entries
+export async function getJournalEntries(qty = 10) {
+  const docsSnapShot = await getDocs(query(journalEntriesCollectionRef, orderBy("datestamp", "asc"), limit(qty)))
+  const entries = docsSnapShot.docs.map(doc => ({
+      ...doc.data(),
+      id: doc.id
+  }))
+  return entries
+}
+
+export async function getJournalEntry(id) {
+  const docRef = doc(db, "journal-entries", id)
+  const docSnapshot = await getDoc(docRef)
+  return {
+    ...docSnapshot.data(),
+    id: docSnapshot.id
+  }
 }

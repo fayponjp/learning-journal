@@ -1,10 +1,20 @@
 .main-header {
-    background: radial-gradient(circle, rgba(242, 243, 240, 0.2) 10%, rgba(0,0,0,0.6) 90%), url("./backgrounds/cover_1.JPG") 60% 90%;
     padding-top: 30vh;
     background-size: cover;
+    background-position: center bottom;
     color: #fff;
     padding-bottom: 2em;
     height: 70vh;
+    display: flex;
+}
+
+.main-header-text {
+    margin-top: auto;
+    width: 60%;
+    font-size: 1.1675rem;
+    display: flex;
+    gap: 0.5em;
+    flex-direction: column;
 }
 
 .container {
@@ -17,7 +27,14 @@
     }
 } 
 
-.blog-container {
+@media (max-width: 550px) {
+    .main-header-text {
+        margin-top: initial;
+        width: 100%;
+    }
+}
+
+/* .blog-container {
     margin-top: 2em;
     display: flex;
     flex-wrap: wrap;
@@ -29,4 +46,4 @@
 
 .blog-container > article {
     flex: 1 0 400px;
-}
+} */

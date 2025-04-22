@@ -1,0 +1,13 @@
+.blog-container {
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+}
+
+.blog-container > article {
+    flex: 1 0 400px;
+}
